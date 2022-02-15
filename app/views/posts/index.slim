@@ -1,0 +1,8 @@
+h1 Posts
+
+- @posts.each do |post|
+  = render post
+
+= link_to "Scrape SAYS post", scrape_posts_path('says')
+= link_to "Scrape The Rakyat post", scrape_posts_path('therakyat')
+= link_to "Scrape Berita Harian post", scrape_posts_path('beritaharian')
